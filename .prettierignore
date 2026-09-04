@@ -1,6 +1,1 @@
-node_modules
-.next
-out
-build
-coverage
-public
+.vscode/

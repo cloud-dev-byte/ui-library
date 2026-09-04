@@ -36,19 +36,13 @@ Please make sure that your contribution:
 - Does not copy a copyrighted design without permission.
 - Does not contain malicious code.
 - Works properly on different screen sizes.
-- Follows the existing project structure.
-- Uses accessible HTML where possible.
+- Follows the project's static HTML and CSS structure.
+- Uses clean and accessible HTML markup.
 
-## Adding a New Component
+## Adding a New Component or Page
 
-For example, to add a new button:
+To add a new component or page category:
 
-```text
-src/
-├── buttons/
-│   └── button-07.tsx
-│
-└── registry/
-    └── components/
-        └── buttons.ts
-```
+1. Create a new folder matching your component type (e.g., `alerts/`).
+2. Include an `index.html` and a `style.css` file inside that folder.
+3. Link your stylesheet properly in the HTML `<head>`.

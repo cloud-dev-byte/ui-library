@@ -1,3 +1,10 @@
+# Bug Report Template
+
+A standard GitHub issue template designed to help users report bugs or unexpected behavior cleanly and effectively.
+
+## Template Content
+
+```markdown
 ---
 name: Bug Report
 about: Report a bug or unexpected behavior
@@ -7,10 +14,6 @@ labels: bug
 
 ## Describe the Bug
 
-<!--
-Clearly describe the problem.
--->
-
 ## Steps to Reproduce
 
 1.
@@ -19,21 +22,9 @@ Clearly describe the problem.
 
 ## Expected Behavior
 
-<!--
-What did you expect to happen?
--->
-
 ## Actual Behavior
 
-<!--
-What actually happened?
--->
-
 ## Screenshots
-
-<!--
-Add screenshots if they help explain the problem.
--->
 
 ## Environment
 
@@ -43,7 +34,4 @@ Add screenshots if they help explain the problem.
 - Screen Size:
 
 ## Additional Information
-
-<!--
-Add anything else that might help us understand the problem.
--->
+```

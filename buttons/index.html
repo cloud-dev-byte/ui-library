@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons - UI Library</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a href="/" class="logo-link">
+          <div class="logo-box">U</div>
+          <span class="logo-text">UI Library</span>
+        </a>
+
+        <a
+          href="https://github.com/cloud-dev-byte/ui-vault.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-github"
+        >
+          GitHub
+        </a>
+      </div>
+    </header>
+    <main class="page-container">
+      <div class="page-header">
+        <p class="header-tag">Components</p>
+        <h1 class="header-title">Buttons</h1>
+        <p class="header-description">
+          Modern button designs that you can use directly in your projects.
+        </p>
+      </div>
+
+      <div class="buttons-grid">
+        <!-- Primary button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn primary-btn">Primary Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Primary</h2>
+          </div>
+        </div>
+
+        <!-- Secondary button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn secondary-btn">Secondary Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Secondary</h2>
+          </div>
+        </div>
+
+        <!-- Outline button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn outline-btn">Outline Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Outline</h2>
+          </div>
+        </div>
+
+        <!-- Danger button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn danger-btn">Danger Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Danger</h2>
+          </div>
+        </div>
+
+        <!-- Ghost button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn ghost-btn">Ghost Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Ghost</h2>
+          </div>
+        </div>
+
+        <!-- Gradient button -->
+        <div class="button-card">
+          <div class="button-preview">
+            <button class="sample-btn gradient-btn">Gradient Button</button>
+          </div>
+          <div class="button-card-footer">
+            <h2 class="button-name">Gradient</h2>
+          </div>
+        </div>
+      </div>
+      <section class="opensource-section">
+        <div class="opensource-container">
+          <div class="opensource-card">
+            <span class="section-tag">Open Source</span>
+            <h2 class="opensource-title">
+              Built together, shared with everyone.
+            </h2>
+            <p class="opensource-text">
+              Use any design you find here in your own projects, customize it,
+              learn from the code, and make it your own. Have a design in mind?
+              Create it and contribute it to UI Library through a pull request.
+            </p>
+
+            <a
+              href="https://github.com/cloud-dev-byte/ui-vault.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary btn-margin"
+            >
+              Contribute a design
+            </a>
+
+            <p class="opensource-footer">
+              Have an idea, a new design, or want to improve an existing one?
+              Pull requests are welcome.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; <span id="current-year"></span> UI Library</p>
+        <p>Open source UI for developers.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Library</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a href="/" class="logo-link">
+          <div class="logo-box">U</div>
+          <span class="logo-text">UI Library</span>
+        </a>
+
+        <a
+          href="https://github.com/cloud-dev-byte/ui-vault.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-github"
+        >
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-glow-container">
+          <div class="hero-glow"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Beautiful UI designs
+              <span class="hero-subtitle">made for developers.</span>
+            </h1>
+
+            <p class="hero-description">
+              Discover modern components, sections and complete page designs.
+              Explore the design, inspect the code and build it into your own
+              project.
+            </p>
+
+            <div class="hero-action">
+              <a
+                href="https://github.com/cloud-dev-byte/ui-vault.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-section">
+        <div class="explore-container">
+          <div class="section-header">
+            <span class="section-tag">Explore</span>
+            <h2 class="section-title">Find the right UI for your project</h2>
+            <p class="section-description">
+              From small reusable components to complete website designs.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <a href="/buttons" class="explore-card">
+              <div class="card-top">
+                <div class="card-icon">B</div>
+                <div class="card-count">6</div>
+              </div>
+              <span class="card-type">component</span>
+              <h3 class="card-title">Buttons</h3>
+              <p class="card-text">
+                Reusable UI elements built for modern apps.
+              </p>
+              <div class="card-link">Explore &rarr;</div>
+            </a>
+            <a href="/cards" class="explore-card">
+              <div class="card-top">
+                <div class="card-icon">C</div>
+                <div class="card-count">6</div>
+              </div>
+              <span class="card-type">component</span>
+              <h3 class="card-title">Cards</h3>
+              <p class="card-text">
+                Beautiful card layouts for profiles, products, pricing, content
+                and more.
+              </p>
+              <div class="card-link">Explore &rarr;</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="opensource-section">
+        <div class="opensource-container">
+          <div class="opensource-card">
+            <span class="section-tag">Open Source</span>
+            <h2 class="opensource-title">
+              Built together, shared with everyone.
+            </h2>
+            <p class="opensource-text">
+              Use any design you find here in your own projects, customize it,
+              learn from the code, and make it your own. Have a design in mind?
+              Create it and contribute it to UI Library through a pull request.
+            </p>
+
+            <a
+              href="https://github.com/cloud-dev-byte/ui-vault.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary btn-margin"
+            >
+              Contribute a design
+            </a>
+
+            <p class="opensource-footer">
+              Have an idea, a new design, or want to improve an existing one?
+              Pull requests are welcome.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; <span id="current-year"></span> UI Library</p>
+        <p>Open source UI for developers.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

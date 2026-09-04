@@ -1,0 +1,193 @@
+/* Base Reset & Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* Page Container & Header */
+.page-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.header-title {
+  margin-top: 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .header-title {
+    font-size: 2.25rem;
+  }
+}
+
+.header-tag {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a78bfa;
+}
+
+.header-description {
+  max-width: 42rem;
+  margin-top: 0.75rem;
+  color: #71717a;
+}
+
+/* Button Grid Layout */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 640px) {
+  .buttons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .buttons-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Individual Card Styling */
+.button-card {
+  display: flex;
+  min-height: 9rem;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.button-preview {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+}
+
+.button-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+}
+
+.button-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Sample Interactive Buttons */
+.sample-btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+/* primary button */
+.primary-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.primary-btn:hover {
+  background-color: #e4e4e7;
+}
+
+/* secondary button */
+
+.secondary-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* outline button */
+
+.outline-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #52525b;
+}
+
+.outline-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #a1a1aa;
+}
+
+/* danger button */
+
+.danger-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: 1px solid #ef4444;
+}
+
+.danger-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ghost button */
+
+.ghost-btn {
+  background-color: transparent;
+  color: #a1a1aa;
+  border: 1px solid transparent;
+}
+
+.ghost-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+/* gradient button */
+
+.gradient-btn {
+  background-image: linear-gradient(to right, #6366f1, #a855f7);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+/* new buttons (you can use your name inside a button) place you button above this line keep this line for other contributors */
+/* also keep a comment above the new button you create the name of the button */

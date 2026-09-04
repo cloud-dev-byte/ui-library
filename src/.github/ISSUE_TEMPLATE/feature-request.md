@@ -1,3 +1,10 @@
+# Feature Request Template
+
+A standard GitHub issue template designed to help users suggest new components, sections, pages, or features for UI Vault.
+
+## Template Content
+
+```markdown
 ---
 name: Feature Request
 about: Suggest a new component, section, page, or feature
