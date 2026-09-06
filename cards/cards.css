@@ -428,6 +428,62 @@ body {
   justify-content: center;
 }
 
+/* instagram card */
+
+.instagram-card-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 260px;
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.instagram-placeholder-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.instagram-placeholder-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.instagram-placeholder-desc {
+  max-width: 300px;
+  margin: 0 0 20px;
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.instagram-placeholder-action {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
 
 /* new card (you can use your name inside a card) place you card above this line, keep this line for other contributors */
 /* also keep a comment above the new card you create, the name of the card */
