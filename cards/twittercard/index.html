@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Profile Card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f1419;
+      color: #e7e9ea;
+    }
+
+    .profile-card {
+      width: 390px;
+      background: #000;
+      border: 1px solid #2f3336;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Cover */
+    .cover {
+      height: 135px;
+      background:
+        linear-gradient(
+          135deg,
+          #1d9bf0,
+          #7856ff,
+          #f91880
+        );
+      position: relative;
+    }
+
+    /* Profile image */
+    .profile-image {
+      position: absolute;
+      width: 105px;
+      height: 105px;
+      left: 22px;
+      bottom: -52px;
+      border-radius: 50%;
+      border: 5px solid #000;
+      object-fit: cover;
+    }
+
+    .profile-content {
+      padding: 60px 22px 22px;
+    }
+
+    /* Top row */
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #f7f9f9;
+    }
+
+    .verified {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 19px;
+      height: 19px;
+      margin-left: 4px;
+      border-radius: 50%;
+      background: #1d9bf0;
+      color: white;
+      font-size: 12px;
+    }
+
+    .username {
+      margin-top: 3px;
+      color: #71767b;
+      font-size: 14px;
+    }
+
+    .join {
+      margin-top: 16px;
+      color: #71767b;
+      font-size: 14px;
+    }
+
+    .bio {
+      margin-top: 16px;
+      color: #e7e9ea;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .location {
+      margin-top: 15px;
+      color: #71767b;
+      font-size: 14px;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      gap: 22px;
+      margin-top: 18px;
+    }
+
+    .stat {
+      color: #71767b;
+      font-size: 14px;
+    }
+
+    .stat strong {
+      color: #e7e9ea;
+      font-size: 15px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 11px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .follow {
+      flex: 1;
+      background: #eff3f4;
+      color: #0f1419;
+    }
+
+    .follow:hover {
+      background: #d7dbdc;
+    }
+
+    .message {
+      flex: 1;
+      background: transparent;
+      border: 1px solid #536471;
+      color: #eff3f4;
+    }
+
+    .message:hover {
+      background: #181818;
+    }
+
+    /* Social links */
+    .links {
+      display: flex;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #1d9bf0;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 430px) {
+      .profile-card {
+        width: 92%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card">
+
+    <!-- Cover -->
+    <div class="cover">
+
+      <img
+        class="profile-image"
+        src="https://i.pravatar.cc/300?img=12"
+        alt="Alex Johnson"
+      >
+
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-content">
+
+      <div class="top">
+        <div>
+          <h1 class="name">
+            Alex Johnson
+            <span class="verified">✓</span>
+          </h1>
+
+          <p class="username">@alexjohnson</p>
+        </div>
+      </div>
+
+      <p class="bio">
+        Designer & Digital Creator ✨
+        <br>
+        Building beautiful things for the internet.
+        <br>
+        Photography • Travel • Technology 🚀
+      </p>
+
+      <p class="location">
+        📍 New York · 📅 Joined March 2020
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>1,248</strong> Following
+        </div>
+
+        <div class="stat">
+          <strong>24.8K</strong> Followers
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="follow">Follow</button>
+        <button class="message">Message</button>
+      </div>
+
+      <div class="links">
+        <a href="#">🌐 Website</a>
+        <a href="#">📷 Instagram</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
